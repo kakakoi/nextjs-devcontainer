@@ -1,0 +1,12 @@
+version: '3'
+services:
+  workspace:
+    build:
+      dockerfile: ./Dockerfile
+    command: sleep infinity
+    volumes:
+      - ..:/workspaces:cached
+#       - node_modules:/workspaces/node_modules
+
+# volumes:
+#   node_modules:
